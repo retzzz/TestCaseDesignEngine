@@ -1,0 +1,13 @@
+if (A and (B or C)) or ((not A or D) and (not B or E == 'Invalid')):
+    if A:
+        assert "1"
+    else:
+        assert "2"
+else:
+    if E == 'Valid' and F < 3:
+        if -5 <= F < 1:
+            assert "1"
+        else:
+            assert "3"
+    else:
+        assert "2"

@@ -1,0 +1,27 @@
+[build-system]
+requires = [
+    "setuptools>=61.0.0",
+    "wheel"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tda_engine"
+authors = [
+    {name = "Zhou Mingjian", email = "mingjian.zhou@honeywell.com"},
+]
+description = "TDA tool"
+requires-python = ">=3.11"
+dependencies = [
+]
+dynamic = ["version"]
+
+[project.scripts]
+tdae = "tda_engine.main:start_tda_engine"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.dynamic]
+version = {attr = "tda_engine.VERSION"}
+

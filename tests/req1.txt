@@ -1,0 +1,10 @@
+if (A and (B or C)) or (not B and 0<D<100):
+    if B:
+        assert 'output 1'
+    else:
+        assert 'output 2'
+else:
+    if C:
+        assert 'output 1'
+    else:
+        assert 'output 2'
